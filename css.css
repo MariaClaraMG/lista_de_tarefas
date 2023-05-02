@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização da pagina */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    background-image: url(Design\ sem\ nome\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilização do titulo */
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* Estilização dos itens adds */
+ul {
+    display: flex;
+    /* faz com que os itens recem add, fiquem em primeiro */
+    flex-direction: column-reverse; 
+    margin-bottom: 20px;
+}
+
+/* mexe na posição da lixeira */
+.titulo button {
+    position: absolute;
+    right: 18%;
+    margin-top: -30px;
+}
+
+/* img lixeira */
+.titulo i {
+    font-size: 22px;
+}
+
+/* tamanho da div principal */
+.lista {
+    margin-top: 40px;
+    width: 60%;
+}
+
+/* estiliza a caixa de inserir o texto */
+.addtexto {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    outline: none;
+}
+
+/* estiliza a div addtexto, onde fica a caixa de inserir o texto */
+.add {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 6px 5px 10px 0px grey;
+    margin-top: 30px;
+}
+
+/* estiliza todos os botões no geral */
+button {
+    width: 10%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* estiliza o botão de confirmar  */
+.bx-plus {
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: #9B8EF8;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+}
+
+/* estiliza as caixas das tarefas que serão adds */
+.divLi {
+    margin-top: 20px;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px 0px grey;
+    display: flex;
+    align-items: center;
+}
+
+/* estiliza o conteudo (texto) da caixa */
+.divLi span {
+    width: 80%;
+    color: dimgray;
+}
+
+/* estiliza o a verificação da tarefa */
+.divLi input {
+    width: 10%;
+    accent-color: black;
+}
+
+/* estiliza a lixeira da caixa recem add */
+.divLi i {
+    font-size: 22px;
+    color: black;
+}
+
+/* tira a bolinha da lista */
+li {
+    list-style-type: none;
+}
+
+/* add um risco na tarefa concluida */
+.line-through {
+    text-decoration: line-through;
+}
+
+
+@media (max-width: 775px) {
+    input {
+        width: 70%;
+    }
+
+    .add button {
+        width: 30%;
+    }
+
+    i {
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+}
